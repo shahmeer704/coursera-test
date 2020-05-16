@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="names"></p>
+
+<script>
+var txt = "";
+var numbers = ["Name1", "Name2", "Name3", "James","Name4", "Joy"];
+numbers.forEach(myFunction);
+document.getElementById("names").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  var current;
+  if(value.charAt(0) == "j" || value.charAt(0) == "J"){
+  	current = "Goodbye " + value;
+  }else{
+  	current = "Hello " + value;
+  }
+  txt = txt + current + "<br>"; 
+}
+</script>
+
+</body>
+</html>
